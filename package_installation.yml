@@ -1,0 +1,10 @@
+---
+- name: Playbook for installing the package httpd
+  hosts: node1
+  remote_user: root
+
+  tasks:
+  - name: Install the pckage httpd
+    yum:
+      name: httpd
+      state: latest
